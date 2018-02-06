@@ -1,0 +1,29 @@
+{
+    "admin":{
+        "filter":"filter",
+        "controller":[
+            {
+                "method": "get",
+                "path": "/index",
+                "name": "admin.IndexController#Index"
+            },
+            {
+                "method": "get",
+                "path": "/login",
+                "name": "admin.IndexController#Login"
+            }
+        ]
+    },
+    "web": [
+        {
+            "method": "get",
+            "path": "/index",
+            "name": "admin.IndexController#Index"
+        },
+        {
+            "method": "get",
+            "path": "/login",
+            "name": "admin.IndexController#Login"
+        }
+    ]
+}

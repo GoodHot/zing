@@ -1,0 +1,104 @@
+{
+    "env": "dev",
+    "dev": {
+        "templateCache": false,
+        "adminTemplate": "/template/admin",
+        "adminURL": "/admin",
+        "webTemplate": "/template/web",
+        "mongourl": "127.0.0.1:27017",
+        "database": "papapa",
+        "adminCookie": "__pppauth__",
+        "ffmpegToMP4": "D:\\DevTool\\ffmpeg\\bin\\ffmpeg -f gif -i %s %s -y",
+        "ffmpegToJPEG": "D:\\DevTool\\ffmpeg\\bin\\ffmpeg -skip_frame nokey -i %s -vsync 0 -vframes 1 -c:v mjpeg %s -y",
+        "fileTempDir": "D:\\Dev\\gopath\\src\\github.com\\wang22\\bo.bo\\static\\adm\\tmp\\",
+        "tempURI": "/adm/tmp/",
+        "domain": "dev.1025.fun",
+        "url": "http://dev.1025.fun",
+        "port": ":80",
+        "upyun": {
+            "bucket": "102500test",
+            "operator": "deeese",
+            "password": "1q2w3e4rds",
+            "upyunURL": "http://102500test.test.upcdn.net",
+            "avatarURI": "avatar/%s.jpg"
+        },
+        "cookie": {
+            "domain": "dev.1025.fun",
+            "path": "/",
+            "httpOnly": true,
+            "secure": false
+        },
+        "redis": {
+            "network": "tcp",
+            "address": "127.0.0.1:6379",
+            "size": 10
+        }
+    },
+    "prod": {
+        "templateCache": true,
+        "adminTemplate": "/template/admin",
+        "adminURL": "/admin5201",
+        "webTemplate": "/template/web",
+        "mongourl": "127.0.0.1:27017",
+        "database": "papapa",
+        "adminCookie": "__pppauth__",
+        "ffmpegToMP4": "ffmpeg -f gif -i %s %s -y",
+        "ffmpegToJPEG": "ffmpeg -skip_frame nokey -i %s -vsync 0 -vframes 1 -c:v mjpeg %s -y",
+        "fileTempDir": "/usr/local/golang/static/adm/tmp/",
+        "tempURI": "/adm/tmp/",
+        "domain": "1025.fun",
+        "url": "http://1025.fun",
+        "port": ":8001",
+        "upyun": {
+            "bucket": "102500",
+            "operator": "deeese",
+            "password": "1q2w3e4rds",
+            "upyunURL": "http://102500.test.upcdn.net",
+            "avatarURI": "avatar/%s.jpg"
+        },
+        "cookie": {
+            "domain": ".1025.fun",
+            "path": "/",
+            "httpOnly": true,
+            "secure": false
+        },
+        "redis": {
+            "network": "tcp",
+            "address": "127.0.0.1:6379",
+            "size": 10
+        }
+    },
+    "test": {
+        "templateCache": true,
+        "adminTemplate": "/template/admin",
+        "adminURL": "/admin",
+        "webTemplate": "/template/web",
+        "mongourl": "127.0.0.1:27017",
+        "database": "papapa",
+        "adminCookie": "__boboauth__",
+        "ffmpegToMP4": "D:\\DevTool\\ffmpeg\\bin\\ffmpeg -f gif -i %s %s -y",
+        "ffmpegToJPEG": "D:\\DevTool\\ffmpeg\\bin\\ffmpeg -skip_frame nokey -i %s -vsync 0 -vframes 1 -c:v mjpeg %s -y",
+        "fileTempDir": "D:\\Dev\\gopath\\src\\github.com\\wang22\\bo.bo\\static\\adm\\tmp\\",
+        "tempURI": "/adm/tmp/",
+        "domain": "test.1025.fun",
+        "url": "http://test.1025.fun",
+        "port": ":80",
+        "upyun": {
+            "bucket": "dese-img",
+            "operator": "deeese",
+            "password": "1q2w3e4rds",
+            "upyunURL": "http://dese-img.b0.upaiyun.com"
+        },
+        "cookie": {
+            "domain": ".1025.fun",
+            "path": "/",
+            "httpOnly": true,
+            "secure": false
+        },
+        "redis": {
+            "network": "tcp",
+            "address": "127.0.0.1:6379",
+            "size": 10
+        }
+    }
+}
